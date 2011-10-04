@@ -1,0 +1,5 @@
+include fastcgi_params;
+fastcgi_param	SCRIPT_FILENAME		/ping;
+fastcgi_param	SCRIPT_NAME		/ping;
+include /etc/nginx/acl_status;
+

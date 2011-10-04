@@ -1,0 +1,4 @@
+include fastcgi_params;
+fastcgi_param	SCRIPT_FILENAME		/status;
+fastcgi_param	SCRIPT_NAME		/status;
+include /etc/nginx/acl_status;

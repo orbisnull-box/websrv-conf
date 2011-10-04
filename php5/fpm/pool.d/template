@@ -1,0 +1,19 @@
+[%poolname%]
+listen = /var/run/php-fpm/%poolname%
+
+listen.owner = %usergroup%
+listen.group = %usergroup%
+
+user = %usergroup%
+group = %usergroup%
+
+;slowlog = /var/log/php/%poolname%.slow.log
+chdir = /var/www/%servername%/htdocs
+
+include = /etc/php5/fpm/pool_params.conf
+
+php_flag[display_errors] = on
+php_admin_value[error_log] = /var/log/php/%poolname%.log
+php_admin_flag[log_errors] = on
+
+
