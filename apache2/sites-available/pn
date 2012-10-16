@@ -1,0 +1,6 @@
+<VirtualHost *:80>
+        ServerName pn
+        ServerAlias *.pn
+        VirtualDocumentRoot /var/www/%0/
+        Include /etc/apache2/sites.conf
+</VirtualHost>
